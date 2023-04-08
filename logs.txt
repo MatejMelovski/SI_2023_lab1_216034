@@ -1,0 +1,36 @@
+commit a4eabb486a5266e596894041145f32a2c76d1a38 (HEAD -> master, origin/master, origin/bug3, bug3)
+Author: Matej Melovski <melovsvkimatej@gmail.com>
+Date:   Sat Apr 8 17:21:47 2023 +0200
+
+    Fix method sumEvenNumbers
+
+commit 084f8405963d163621232a169f75ab365492d1b6
+Merge: 682f4bd 41dd774
+Author: Matej Melovski <melovsvkimatej@gmail.com>
+Date:   Sat Apr 8 17:26:42 2023 +0200
+
+    Merge branch 'bug2'
+
+commit 41dd7743453bb5041731d7eb695c57811f3733e9 (origin/bug2, bug2)
+Author: Matej Melovski <melovsvkimatej@gmail.com>
+Date:   Sat Apr 8 17:20:12 2023 +0200
+
+    Fix wrong condition in filterOddNumbers
+
+commit 682f4bd5efc91fb5edc6f09bb3408d4d34c4d5c1 (origin/bug1, bug1)
+Author: Matej Melovski <melovsvkimatej@gmail.com>
+Date:   Sat Apr 8 17:18:02 2023 +0200
+
+    Fix wrong loop for reading
+
+commit 8ff22fb958a186237aee94759add86c86bcc76f3
+Author: Matej Melovski <melovsvkimatej@gmail.com>
+Date:   Sat Apr 8 16:37:47 2023 +0200
+
+    Add java class
+
+commit 47b7f0d1c0de9368105b67049eeff331ad3ddc8a
+Author: Matej Melovski <melovsvkimatej@gmail.com>
+Date:   Sat Apr 8 16:36:26 2023 +0200
+
+    Initial commit

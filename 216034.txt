@@ -1,0 +1,72 @@
+4. git init (Иницијализира git во директориумот кој е отворен)
+
+5. git remote add origin https://github.com/MatejMelovski/SI_2023_lab1_216034.git (Го поврзува локалниот репозиторијум со remote репозиториумот на GitHub)
+
+6. nano README.txt (Креира txt file во директориумот)
+   gid add README.txt (Се става README.txt на stage)
+   git commit -m "Initial commit" (Се додава commit на master гранката со порака "Initial commit")
+
+7. nano SILab1.java (Креира java file во директориумот
+   git add SILab1.java (Се става SILab1.java на stage)
+   git commit -m "Add java class" (Се додава commit на master гранката со порака "Add java class")
+
+8. git push origin master (Се синхронизира master гранката со remote репозиториумот)
+
+9. git branch bug1 (Се прави нова гранка bug1 од master гранката)
+   git branch bug2 (Се прави нова гранка bug2 од master гранката)
+   git branch bug3 (Се прави нова гранка bug3 од master гранката)
+
+10. git checkout bug1 (Се префрламе на bug1 гранката)
+
+11. Во филеот SILab1.java се менува i <= 0 во i < 0
+    git commit -a -m "Fix wrong loop for reading" (Со -a се ставаат промените на сите датотеки на stage, па се додава commit на bug1 гранката со порака "Fix wrong loop for reading")
+
+12. git checkout bug2 (Се префрламе на bug2 гранката)
+
+13. Во филеот SILab1.java се менува if(el % 2 == 0) во if(el & 2 != 0)
+    git commit -a -m "Fix wrong condition in filterOddNumbers" (Со -a се ставаат промените на сите датотеки на stage, па се додава commit на bug2 гранката со порака "Fix wrong condition in filterOddNumbers")
+
+14. git checkout bug3 (Се префрламе на bug3 гранката)
+
+15. Во филеот SILab1.java се менува int sum = 1 во int sum = 0 и се менува sum *= el во sum += el
+    git commit -a -m "Fix method sumEvenNumbers" (Со -a се ставаат промените на сите датотеки на stage, па се додава commit на bug2 гранката со порака "Fix method sumEvenNumbers")
+
+16. git push origin master (Се синхронизира master гранката со remote директориумот)
+    git push origin bug1 (Се синхронизира bug1 гранката со remote директориумот)
+    git push origin bug2 (Се синхронизира bug2 гранката со remote директориумот)
+    git push origin bug3 (Се синхронизира bug3 гранката со remote директориумот)
+
+17. git checkout master (Се префрламе на master гранката)
+
+18. git merge bug1 (Спојување на гранката bug1 кон гранката master)
+    Не се случија никакви конфликти
+    Се употреби Fast Forward стратегијата
+
+19. git push origin master (Се синхронизира master гранката со remote директориумот)
+    git push origin bug1 (Се синхронизира bug1 гранката со remote директориумот)
+    git push origin bug2 (Се синхронизира bug2 гранката со remote директориумот)
+    git push origin bug3 (Се синхронизира bug3 гранката со remote директориумот)
+
+20. git merge bug2 (Спојување на гранката bug2 кон гранката master)
+    Не се случија никакви конфликти
+    Merge made by the 'ort' strategy.
+
+21. git push origin master (Се синхронизира master гранката со remote директориумот)
+    git push origin bug1 (Се синхронизира bug1 гранката со remote директориумот)
+    git push origin bug2 (Се синхронизира bug2 гранката со remote директориумот)
+    git push origin bug3 (Се синхронизира bug3 гранката со remote директориумот)
+
+22. git checkout bug3 (Се префрламе на bug3 гранката)
+
+23. git rebase master (Сите промени во bug3 гранката кои не се во master гранката се ставаат во привремена просторија, се прават сите комити од master гранката, па едно по едно се прават сите комити во привремената просторија)
+
+24. git checkout master (Се префрламе на master гранката)
+
+25. git merge bug3 (Спојување на гранката bug3 кон гранката master)
+    Не се случија никакви конфликти
+    Се употреби Fast Forward стратегијата
+
+26. git push origin master (Се синхронизира master гранката со remote директориумот)
+    git push origin bug1 (Се синхронизира bug1 гранката со remote директориумот)
+    git push origin bug2 (Се синхронизира bug2 гранката со remote директориумот)
+    git push origin bug3 --force (Се синхронизира bug3 гранката со remote директориумот)
